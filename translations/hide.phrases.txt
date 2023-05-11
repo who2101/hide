@@ -1,0 +1,58 @@
+"Phrases"
+{
+	"Prefix"
+	{
+		"ru" "[HIDE]"
+		"en" "[HIDE]"
+	}
+	"Toggle"
+	{
+		"#format" "{1:t}" // "On" or "Off" phrase
+		"ru" "Вы {1} скрытие игроков"
+		"en" "You have {1} player hiding"
+	}
+	"OnSelectStart"
+	{
+		"ru" "Введите радиус при котором игроки будут скрыватся"
+		"en" "Enter the radius at which the players will hide"
+	}
+	"ErrorRadius"
+	{
+		"ru" "Неверно указан радиус."
+		"en" "The radius is specified incorrectly."
+	}
+	"SetRadius"
+	{
+		"#format" "{1:i}"
+		"ru" "Вы установили дальность скрытия {1} юнит(ов)"
+		"en" "You have set the hiding range of {1} units"
+	}
+	"On"
+	{
+		"ru" "включили"
+		"en" "enabled"
+	}
+	"Off"
+	{
+		"ru" "выключили"
+		"en" "disabled"
+	}
+
+	"MenuTitle"
+	{
+		"ru" "Настройки скрытия"
+		"en" "Hiding settings"
+	}
+
+	"MenuEnabled"
+	{
+		"ru" "Включено"
+		"en" "Enabled"
+	}
+
+	"MenuRadius"
+	{
+		"ru" "Выбрать радиус"
+		"en" "Select the radius"
+	}
+}
