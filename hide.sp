@@ -114,13 +114,13 @@ public Action OnSetTransmit_Weapon(int entity, int client) {
 }
 
 public Action OnSay(int client, const char[] command, int argc) {
+	if(!bSelect[client])
+		return Plugin_Continue;
+
 	char message[8];
 	GetCmdArgString(message, sizeof(message));
 
 	StripQuotes(message);
-	
-	if(!bSelect[client])
-		return Plugin_Continue;
 
 	int iUnits = StringToInt(message);
 	
