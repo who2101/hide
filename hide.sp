@@ -59,8 +59,6 @@ public Action Command(int client, int args) {
 }
 
 public void OnClientPutInServer(int client) {
-	OnClientCookiesCached(client);
-	
 	bSelect[client] = false;
 
 	SDKHook(client, SDKHook_SetTransmit, OnSetTransmit);
