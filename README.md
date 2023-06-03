@@ -1,3 +1,7 @@
+# Description
+
+- Simple plugin for hide players by distance
+
 # Commands
 
 - sm_hide
