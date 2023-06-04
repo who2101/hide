@@ -8,4 +8,4 @@
 
 # ConVars
 
-- hide_mode_zm - Enable mode for zombie when hide enable only for humans (Default: 0)
+- hide_mode_zm - Enable mode for ZM/ZE when hide enable only for humans (Default: 0)
