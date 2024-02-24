@@ -1,6 +1,7 @@
 # Description
 
 Hide plugins by distance
+
 There are 2 versions:
 
 - Normal | hide.smx
