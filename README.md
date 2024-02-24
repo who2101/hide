@@ -1,12 +1,10 @@
 # Description
 
-There are 2 plugins:
+Hide plugins by distance
+There are 2 versions:
 
 - Normal | hide.smx
 - For ze servers | ze_hide.smx
-
-Functions:
-- Setting the radius of hiding players
 
 # Commands
 
