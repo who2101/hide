@@ -10,4 +10,4 @@ There are 2 versions:
 # Commands
 
 - sm_hide - open menu using normal version
-- sm_hide <value> - change hide distance with ze version
+- sm_hide value - change hide distance with ze version
