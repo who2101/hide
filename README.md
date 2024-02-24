@@ -1,6 +1,6 @@
 # Description
 
-# There are 2 plugins:
+There are 2 plugins:
 
 - Normal | hide.smx
 - For ze servers | ze_hide.smx
