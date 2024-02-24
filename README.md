@@ -1,6 +1,6 @@
 # Description
 
-Hide plugins by distance
+Plugins for hiding players by distance
 
 There are 2 versions:
 
