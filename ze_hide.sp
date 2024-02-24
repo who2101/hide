@@ -15,7 +15,7 @@ t_settings HideSettings[MAXPLAYERS + 1];
 Handle hCookie[2];
 
 public void OnPluginStart() {
-	LoadTranslations("hide.phrases.txt");
+	LoadTranslations("ze_hide.phrases.txt");
 
 	hCookie[0] = RegClientCookie("hide_enabled", "", CookieAccess_Private);
 	hCookie[1] = RegClientCookie("hide_distance", "", CookieAccess_Private);
