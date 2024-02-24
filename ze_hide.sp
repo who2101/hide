@@ -6,6 +6,14 @@
 #include <sdkhooks>
 #include <zombiereloaded>
 
+public Plugin myinfo =
+{
+	name = "[ZR] Hide",
+	author = "who",
+	description = "Hide plugin for Zombie Escape",
+	version = "1.0"
+};
+
 enum struct t_settings {
 	bool bEnabled;
 	int HideDistance;
@@ -54,8 +62,7 @@ public Action Command(int client, int args) {
 	
 	SetClientCookie(client, hCookie[0], "1");
 	SetClientCookie(client, hCookie[1], sArg);
-	
-	// Вы включили скрытие зомби [{1} юнитов]
+
 	CPrintToChat(client, "%T", "Enabled", client, units);
 	
 	return Plugin_Handled;
