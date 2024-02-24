@@ -6,10 +6,8 @@
 #include <sdkhooks>
 
 Handle hCookie[2];
-ConVar hCvar;
 
 bool
-	bZM,
 	bHide[MAXPLAYERS + 1],
 	bSelect[MAXPLAYERS + 1];
 
@@ -30,10 +28,6 @@ public void OnPluginStart() {
 	AddCommandListener(OnSay, "say_team");
 
 	LoadTranslations("hide.phrases");
-	
-	hCvar = CreateConVar("hide_mode_zm", "0");
-	hCvar.AddChangeHook(OnCvarChanged);
-	bZM = hCvar.BoolValue;
 
 	hCookie[0] = RegClientCookie("hide_enabled", "", CookieAccess_Private);
 	hCookie[1] = RegClientCookie("hide_units", "", CookieAccess_Private);
@@ -43,10 +37,6 @@ public void OnPluginStart() {
 	for(int i = 1; i <= MaxClients; i++)
 		if(IsClientInGame(i) && !IsFakeClient(i))
 			OnClientCookiesCached(i);
-}
-
-public void OnCvarChanged(ConVar cvar, const char[] oldVal, const char[] newVal) {
-	bZM = view_as<bool>(StringToInt(newVal));
 }
 
 public Action Command(int client, int args) {
@@ -84,9 +74,6 @@ public Action OnSetTransmit(int entity, int client) {
 		return Plugin_Continue;
 
 	if(!bHide[client])
-		return Plugin_Continue;
-	
-	if(bZM && GetClientTeam(entity) & GetClientTeam(client) != 3)
 		return Plugin_Continue;
 
 	float vec[2][3];
