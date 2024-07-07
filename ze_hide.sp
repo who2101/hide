@@ -72,7 +72,7 @@ public void OnClientCookiesCached(int client) {
 	char sData[32];
 	GetClientCookie(client, hCookie[0], sData, sizeof sData);
 	
-	HideSettings[client].bEnabled = sData[0] == 0 ? false : view_as<bool>(StringToInt(sData));
+	HideSettings[client].bEnabled = sData[0] == 0 ? false : !!StringToInt(sData);
 
 	GetClientCookie(client, hCookie[1], sData, sizeof sData);
 	
