@@ -59,13 +59,13 @@ public void OnClientCookiesCached(int client) {
 	GetClientCookie(client, hCookie[0], szValue, sizeof(szValue));
 	
 	if(szValue[0])
-		bHide[client] = view_as<bool>(StringToInt(szValue)); // char to bool
+		bHide[client] = !!StringToInt(szValue);
 	else bHide[client] = false;
 	
 	GetClientCookie(client, hCookie[1], szValue, sizeof(szValue));
 	
 	if(szValue[0])
-		iHideUnits[client] = StringToInt(szValue); // char to bool
+		iHideUnits[client] = StringToInt(szValue);
 	else iHideUnits[client] = 128;
 }
 
